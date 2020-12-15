@@ -1,11 +1,7 @@
 <?php
 
-//aa
-# aa
-/*
-aaaa
-*/
+$name = 'もち';
 
-echo 'hello'.PHP_EOL; 
-echo 'もち'.PHP_EOL;
+echo 'hello'.$name .PHP_EOL; 
+echo 'hi'.$name .PHP_EOL;
 
