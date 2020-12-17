@@ -1,7 +1,12 @@
 <?php
 
-$name = 'もち';
 
-echo 'hello'.$name .PHP_EOL; 
-echo "\"hi|"\t $name" .PHP_EOL;
+$name = 'taguchi';
+$text = <<<EOT
 
+  hello! $name
+  this is long
+  text!
+  EOT;
+
+  echo $text;
