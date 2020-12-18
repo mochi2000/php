@@ -1,12 +1,11 @@
 <?php
 
+echo 10 + 3 .PHP_EOL;
 
-$name = 'taguchi';
-$text = <<<EOT
+echo 10 - 3 .PHP_EOL;
+echo 10 * 3 .PHP_EOL;
+echo 10 / 3 .PHP_EOL;
+echo 10 % 3 .PHP_EOL;
+echo 10 ** 3 .PHP_EOL;
 
-  hello! $name
-  this is long
-  text!
-  EOT;
-
-  echo $text;
+echo 2 + '3' .PHP_EOL;
