@@ -1,11 +1,7 @@
 <?php
 
-echo 10 + 3 .PHP_EOL;
+$price = 500;
 
-echo 10 - 3 .PHP_EOL;
-echo 10 * 3 .PHP_EOL;
-echo 10 / 3 .PHP_EOL;
-echo 10 % 3 .PHP_EOL;
-echo 10 ** 3 .PHP_EOL;
+$price += 100;
 
-echo 2 + '3' .PHP_EOL;
+echo $price .PHP_EOL;
