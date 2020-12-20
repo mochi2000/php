@@ -1,7 +1,12 @@
 <?php
 
 $price = 500;
+$name = 'yamada';
 
-$price += 100;
+define('PRICE','500');
 
-echo $price .PHP_EOL;
+const NAME = 'yamada';
+const NAME = 'yamauchi';
+
+echo NAME . PHP_EOL;
+
