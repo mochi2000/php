@@ -1,12 +1,19 @@
 <?php
 
-$price = 500;
-$name = 'yamada';
+$a = 'hallo';
+$b = 10;
+$c = -1.3;
+$d = null;
+$e = true;
 
-define('PRICE','500');
+var_dump($a);
+var_dump($b);
+var_dump($c);
+var_dump($d);
+var_dump($e);
 
-const NAME = 'yamada';
-const NAME = 'yamauchi';
+$a = (float)10;
+$b = (string)1.3;
 
-echo NAME . PHP_EOL;
-
+var_dump($a);
+var_dump($b);
