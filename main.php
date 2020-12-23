@@ -1,11 +1,9 @@
 <?php
 
-$score = 85;
+$score = 0; //0やnullの場合はfalse、それ以外はtrueと判断
 
-if($score >= 80) {
-  echo 'Great' . PHP_EOL;
-} elseif ($score >= 60) {
-  echo 'good' . PHP_EOL;
+if($score) {
+  echo 'true' . PHP_EOL;
 } else {
-  echo 'OK' . PHP_EOL;
+  echo 'false' . PHP_EOL;
 }
