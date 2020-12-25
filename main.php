@@ -1,9 +1,16 @@
 <?php
 
-$score = 60; 
-$name = 'taguchi';
+$signal = 'red';
 
-if ($score >= 50 && $name = 'taguchi') {
-  echo 'Good' . PHP_EOL;
+switch ($signal) {
+  case 'red':
+    echo 'stop' . PHP_EOL;
+  break;
+  case 'yellow':
+    echo 'caution' . PHP_EOL;
+  break;
+  case 'blue':
+    echo 'ok' . PHP_EOL;
+  break;
 }
 
