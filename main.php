@@ -1,14 +1,11 @@
 <?php
 
-$hp = 100;
-
-while($hp > 0) {
-  echo "Your HP: $hp" . PHP_EOL;
-  $hp -= 15;
+for ($i = 1; $i <= 10; $i++) {
+  if ($i % 3 === 0) {
+    continue;
+  }
+  // if($i === 4) {
+  // break;
+  // }
+  echo $i . PHP_EOL;
 }
-//条件を書かないと無限ループになってしまう
-
-// do {
-//   echo "Your HP: $hp" . PHP_EOL;
-//   $hp -= 15;
-// } while ($hp > 0);
