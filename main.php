@@ -1,11 +1,13 @@
 <?php
 
-for ($i = 1; $i <= 10; $i++) {
-  if ($i % 3 === 0) {
-    continue;
-  }
-  // if($i === 4) {
-  // break;
-  // }
-  echo $i . PHP_EOL;
+function showAd() {
+  echo '------' . PHP_EOL;
+  echo '--ad--' . PHP_EOL;
+  echo '------' . PHP_EOL;
 }
+
+
+echo 'こんにちは' . PHP_EOL;
+showAd();
+echo 'こんばんは' . PHP_EOL;
+showAd();
