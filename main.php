@@ -1,13 +1,13 @@
 <?php
 
-function showAd() {
+function showAd($message = 'Ad') {
   echo '------' . PHP_EOL;
-  echo '--ad--' . PHP_EOL;
+  echo '--' . $message . '--' . PHP_EOL;
   echo '------' . PHP_EOL;
 }
 
 
 echo 'こんにちは' . PHP_EOL;
-showAd();
+showAd('ad');
 echo 'こんばんは' . PHP_EOL;
-showAd();
+showAd('Footer ad');
