@@ -1,13 +1,8 @@
 <?php
 
-function showAd($message = 'Ad') {
-  echo '------' . PHP_EOL;
-  echo '--' . $message . '--' . PHP_EOL;
-  echo '------' . PHP_EOL;
+function sum($a, $b, $c) 
+{
+  return $a+$b+$c . PHP_EOL;
 }
 
-
-echo 'こんにちは' . PHP_EOL;
-showAd('ad');
-echo 'こんばんは' . PHP_EOL;
-showAd('Footer ad');
+echo sum(100,200,300) + sum(200,400,400) .PHP_EOL;
