@@ -1,13 +1,14 @@
 <?php
 
-$rate = 1.1; //グローバル
+// function sum($a, $b, $c) 
+// {
+//   return ($a+$b+$c) ;
+// }
 
-function sum($a, $b, $c) 
-{
-  $rate = 1.08; //ローカル
-  return ($a+$b+$c) * $rate . PHP_EOL;
-}
+//無名関数
+$sum = function ($a, $b, $c) {
+  return $a+$b+$c;
+};
 
-echo sum(100,200,300) + sum(200,400,400) .PHP_EOL;
+echo $sum(300,300,300) . PHP_EOL;
 
-//PHPの場合グローバル変数を関数で呼び出す事ができない
