@@ -1,22 +1,16 @@
 <?php
 
-function sum($a, $b, $c) 
+declare(strict_types=1);
+
+function showInfo(string $name, int $score): void
 {
-  $total = ($a+$b+$c) ;
+  echo $name . ': ' . $score . PHP_EOL;
+} 
 
-  // if ($total < 0) {
-  //   return 0;
-  // } else {
-  //   return $total;
-  // }
-  
-  return $total < 0 ? 0 : $total;
-  // 上と同じ結果
-  // 条件 ? true : false;
-}
+showInfo('taguchi', 40);
 
-echo sum(100,110,100) . PHP_EOL;
-
-
-
+/*
+declare文を入れておく事で型指定が厳密になり
+文字列で数字を指定した場合にはint型には通らなくなる
+*/
 
