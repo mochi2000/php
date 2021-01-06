@@ -2,15 +2,10 @@
 
 declare(strict_types=1);
 
-function showInfo(string $name, int $score): void
+function getAward(int $score): ?string //?をつける事でnullも指定に含める事ができる
 {
-  echo $name . ': ' . $score . PHP_EOL;
-} 
+  return $score >= 100 ? 'Gold':null;
+}
 
-showInfo('taguchi', 40);
-
-/*
-declare文を入れておく事で型指定が厳密になり
-文字列で数字を指定した場合にはint型には通らなくなる
-*/
-
+echo getAward(150) . PHP_EOL;
+echo getAward(40) . PHP_EOL;
