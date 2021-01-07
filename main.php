@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types=1);
+$scores = [
+  90,
+  80,
+  40,
+];
 
-function getAward(int $score): ?string //?をつける事でnullも指定に含める事ができる
-{
-  return $score >= 100 ? 'Gold':null;
-}
-
-echo getAward(150) . PHP_EOL;
-echo getAward(40) . PHP_EOL;
+$scores[2] = 50;
+echo $scores[2] . PHP_EOL;
