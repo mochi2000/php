@@ -1,10 +1,11 @@
 <?php
 
 $scores = [
-  90,
-  80,
-  40,
+  '1' => 90,
+  '2' => 80,
+  '3' => 40,
+  //'' => で配列の名前を指定できる、これをキーと呼ぶ
 ];
 
-$scores[2] = 50;
-echo $scores[2] . PHP_EOL;
+var_dump($scores);
+print_r($scores);
