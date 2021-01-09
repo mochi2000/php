@@ -7,5 +7,6 @@ $scores = [
   //'' => で配列の名前を指定できる、これをキーと呼ぶ
 ];
 
-var_dump($scores);
-print_r($scores);
+foreach ($scores as $key => $score) {
+  echo $key . '-' . $score . PHP_EOL;
+}
