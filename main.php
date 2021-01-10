@@ -1,12 +1,19 @@
 <?php
-
-$scores = [
-  '1' => 90,
-  '2' => 80,
-  '3' => 40,
-  //'' => で配列の名前を指定できる、これをキーと呼ぶ
+$moreScores = [
+  55,
+  72,
+  'perfect',
+  [90, 42, 88],
 ];
 
-foreach ($scores as $key => $score) {
-  echo $key . '-' . $score . PHP_EOL;
-}
+$scores = [
+  90,
+  40,
+  ...$moreScores,
+  100,
+];
+
+// print_r($scores);
+
+echo $scores[5][2] . PHP_EOL;
+
