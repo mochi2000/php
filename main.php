@@ -1,19 +1,15 @@
 <?php
-$moreScores = [
-  55,
-  72,
-  'perfect',
-  [90, 42, 88],
-];
 
-$scores = [
-  90,
-  40,
-  ...$moreScores,
-  100,
-];
+function sum(...$numbers)
+{
+  $total = 0;
+  foreach ($numbers as $number) {
+    $total += $number;
+  }
+  return $total;
+}
 
-// print_r($scores);
+ echo sum(2,2,2) . PHP_EOL;
+ echo sum(3,3,3,3,3,3) . PHP_EOL;
 
-echo $scores[5][2] . PHP_EOL;
-
+ 
