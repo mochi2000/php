@@ -1,15 +1,17 @@
 <?php
 
-function sum(...$numbers)
+function getStats(...$numbers)
 {
   $total = 0;
   foreach ($numbers as $number) {
     $total += $number;
   }
-  return $total;
+  return [$total, $total / count($numbers)];
 }
 
- echo sum(2,2,2) . PHP_EOL;
- echo sum(3,3,3,3,3,3) . PHP_EOL;
+print_r(getStats(1,3,5));
 
- 
+[$sum, $average] = getStats(1,3,5);
+
+echo $sum . PHP_EOL;
+echo $average . PHP_EOL;
