@@ -1,17 +1,10 @@
 <?php
 
-function getStats(...$numbers)
-{
-  $total = 0;
-  foreach ($numbers as $number) {
-    $total += $number;
-  }
-  return [$total, $total / count($numbers)];
-}
+$name = 'apple';
+$score = 32.333;
 
-print_r(getStats(1,3,5));
+$info = "[$name][$score]";
+echo $info . PHP_EOL;
 
-[$sum, $average] = getStats(1,3,5);
-
-echo $sum . PHP_EOL;
-echo $average . PHP_EOL;
+$info = sprintf("[%-15s][%010.2f]", $name, $score);
+echo $info . PHP_EOL;
