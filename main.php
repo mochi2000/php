@@ -1,10 +1,8 @@
 <?php
 
-$name = 'apple';
-$score = 32.333;
+$input = ' dot_install' ;
+$input = trim($input);
+echo strpos($input,'_'). PHP_EOL;
 
-$info = "[$name][$score]";
-echo $info . PHP_EOL;
-
-$info = sprintf("[%-15s][%010.2f]", $name, $score);
-echo $info . PHP_EOL;
+$input = str_replace('_','-', $input);
+echo $input . PHP_EOL;
