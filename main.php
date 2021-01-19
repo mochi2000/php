@@ -1,8 +1,8 @@
 <?php
 
-$input = ' dot_install' ;
+$input = ' こんにちは' ;
 $input = trim($input);
-echo strpos($input,'_'). PHP_EOL;
+echo mb_strpos($input,'に'). PHP_EOL;
 
-$input = str_replace('_','-', $input);
+$input = str_replace('にち','ばん', $input);
 echo $input . PHP_EOL;
